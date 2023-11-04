@@ -10,16 +10,25 @@
     </div>
     <div class="nombre-real">Marta</div>
   </div>
+  <div>
+    <button type="button" (click)="cargardatos()">Recargar datos</button>
+  </div>
+  <div>
+    <button type="button" (click)="contarpublicaciones()">Contar publicaciones</button>
+  </div>
+  <!-- <div>
+    <button type="button" (click)="contarseguidores()">Contar seguidores</button>
+  </div> -->
   <div class="datos-cuenta">
-    <div class="numero">176</div>
+    <div class="numero">{{publicaciones}}</div>
     <div class="titulo-datos-cuenta">Publicaciones</div>
   </div>
   <div class="datos-cuenta">
-    <div class="numero">166</div>
+    <div class="numero">{{seguidores}}</div>
     <div class="titulo-datos-cuenta">Seguidores</div>
   </div>
   <div class="datos-cuenta">
-    <div class="numero">520</div>
+    <div class="numero">{{siguiendo}}</div>
     <div class="titulo-datos-cuenta">Siguiendo</div>
   </div>
 </div>
