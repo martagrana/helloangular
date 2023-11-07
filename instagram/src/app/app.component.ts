@@ -6,11 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title: string = 'instagram';
+  usuario: string = 'Death_cab';
+  nombrereal: string = 'Marta';
+  fotousuario: string = 'instagram\src\assets\img\marta-grana.jpg';
+  titulodato1: string = 'publicaciones';
+  titulodato2: string = 'seguidores';
+  titulodato3: string = 'siguiendo';
   publicaciones: number = 0;
   seguidores: number = 300;
   siguiendo: number = 200;
-
 
   cargardatos() {
     this.publicaciones = Math.random();

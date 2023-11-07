@@ -2,11 +2,11 @@
   Hola angular
 </h1>
 <div class="cabecera-instagram">
-  <div class="nombre-de-usuario">death_cab</div>
+  <div class="nombre-de-usuario">{{usuario}}</div>
 
   <div class="foto-usuario" id="foto-principal">
     <div>
-      <img class="img-usuario" src="assets/img/marta-grana.jpg" alt="Marta Grana">
+      <img class="img-usuario" src="{{fotousuario}}" alt="Marta Grana">
     </div>
     <div class="nombre-real">Marta</div>
   </div>
@@ -21,15 +21,15 @@
   </div> -->
   <div class="datos-cuenta">
     <div class="numero">{{publicaciones}}</div>
-    <div class="titulo-datos-cuenta">Publicaciones</div>
+    <div class="titulo-datos-cuenta">{{titulodato1}}</div>
   </div>
   <div class="datos-cuenta">
     <div class="numero">{{seguidores}}</div>
-    <div class="titulo-datos-cuenta">Seguidores</div>
+    <div class="titulo-datos-cuenta">{{titulodato2}}</div>
   </div>
   <div class="datos-cuenta">
     <div class="numero">{{siguiendo}}</div>
-    <div class="titulo-datos-cuenta">Siguiendo</div>
+    <div class="titulo-datos-cuenta">{{titulodato3}}</div>
   </div>
 </div>
 <div class="contenedor-post">
