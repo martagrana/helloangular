@@ -9,19 +9,19 @@ export class AppComponent {
 
   title: string = 'instagram';
 
-  titulodato1: string = 'publicaciones';
-  titulodato2: string = 'seguidores';
-  titulodato3: string = 'siguiendo';
+  tituloDato1: string = 'publicaciones';
+  tituloDato2: string = 'seguidores';
+  tituloDato3: string = 'siguiendo';
   publicaciones: number = 0;
   seguidores: number = 300;
   siguiendo: number = 200;
-  fechanacimiento: Date = new Date(1983, 11, 16);
-  eschica: boolean = true;
+  fechaNacimiento: Date = new Date(1983, 11, 16);
+  esChica: boolean = true;
 
   perfil = {
     usuario: 'Death_cab',
-    nombrereal: 'Marta Graña',
-    fotousuario: 'assets/img/marta-grana.jpg',
+    nombreReal: 'Marta Graña',
+    fotoUsuario: 'assets/img/marta-grana.jpg',
   };
 
   fotos: string[] = ["assets/img/IMG_instagram1.jpg", "assets/img/IMG_instagram2.jpg", "assets/img/IMG_instagram3.jpg"];
@@ -51,20 +51,20 @@ export class AppComponent {
     console.log(this.fotos[3]);*/
   }
 
-  cargardatos() {
+  cargarDatos() {
     this.publicaciones = Math.random();
     this.seguidores = Math.random();
     this.siguiendo = Math.random();
 
   }
-  contarpublicaciones() {
+  contarPublicaciones() {
     this.publicaciones += 3;
-    this.calcularseguidores();
-    console.log(this.fechanacimiento.getFullYear());
-    if (this.eschica) {
+    this.calcularSeguidores();
+    console.log(this.fechaNacimiento.getFullYear());
+    if (this.esChica) {
       console.log("soy chica");
-      let añonacimiento: number = this.fechanacimiento.getFullYear();
-      if (añonacimiento > 1980) { console.log("soy de los ochenta"); }
+      let añoNacimiento: number = this.fechaNacimiento.getFullYear();
+      if (añoNacimiento > 1980) { console.log("soy de los ochenta"); }
       else {
         console.log("no soy de los ochenta");
       }
@@ -77,7 +77,7 @@ export class AppComponent {
 
   }
 
-  calcularseguidores() {
+  calcularSeguidores() {
     this.seguidores *= 2;
     let siguiendo = this.publicaciones * (1 + 1 / 3);
     this.siguiendo = Math.round(siguiendo);

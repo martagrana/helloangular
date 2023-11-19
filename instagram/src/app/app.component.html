@@ -2,22 +2,22 @@
   Hola angular
 </h1>
 <div>
-  <input type="text" [(ngModel)]="perfil.nombrereal">
+  <input type="text" [(ngModel)]="perfil.nombreReal">
 </div>
 <div class="cabecera-instagram">
   <div class="nombre-de-usuario">{{perfil.usuario}}</div>
 
   <div class="foto-usuario" id="foto-principal">
     <div>
-      <img class="img-usuario" src={{perfil.fotousuario}} alt="Marta Grana">
+      <img class="img-usuario" src={{perfil.fotoUsuario}} alt="Marta Grana">
     </div>
-    <div class="nombre-real">{{perfil.nombrereal}}</div>
+    <div class="nombre-real">{{perfil.nombreReal}}</div>
   </div>
   <div>
-    <button type="button" (click)="cargardatos()">Recargar datos</button>
+    <button type="button" (click)="cargarDatos()">Recargar datos</button>
   </div>
   <div>
-    <button type="button" (click)="contarpublicaciones()">Contar publicaciones</button>
+    <button type="button" (click)="contarPublicaciones()">Contar publicaciones</button>
   </div>
   <div>
     <button type="button" (click)="resetear()">reseteo</button>
@@ -30,15 +30,15 @@
 
   <div class="datos-cuenta">
     <div class="numero">{{publicaciones}}</div>
-    <div class="titulo-datos-cuenta">{{titulodato1}}</div>
+    <div class="titulo-datos-cuenta">{{tituloDato1}}</div>
   </div>
   <div class="datos-cuenta">
     <div class="numero">{{seguidores}}</div>
-    <div class="titulo-datos-cuenta">{{titulodato2}}</div>
+    <div class="titulo-datos-cuenta">{{tituloDato2}}</div>
   </div>
   <div class="datos-cuenta">
     <div class="numero">{{siguiendo}}</div>
-    <div class="titulo-datos-cuenta">{{titulodato3}}</div>
+    <div class="titulo-datos-cuenta">{{tituloDato3}}</div>
   </div>
 </div>
 <div class="contenedor-post">
