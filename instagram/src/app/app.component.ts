@@ -32,7 +32,7 @@ export class AppComponent {
 
   }
   contarpublicaciones() {
-    this.publicaciones = this.publicaciones + 1;
+    this.publicaciones += 3;
     this.calcularseguidores();
     console.log(this.fechanacimiento.getFullYear());
     if (this.eschica) {
@@ -52,9 +52,15 @@ export class AppComponent {
   }
 
   calcularseguidores() {
-    this.seguidores = this.publicaciones * 2;
-    this.siguiendo = this.publicaciones * (1 + 1 / 3);
-    this.siguiendo = Math.round(this.siguiendo);
+    this.seguidores *= 2;
+    let siguiendo = this.publicaciones * (1 + 1 / 3);
+    this.siguiendo = Math.round(siguiendo);
+  }
+
+  resetear() {
+    this.publicaciones = 0;
+    this.seguidores = 0;
+    this.siguiendo = 0;
   }
 
 }
