@@ -24,6 +24,32 @@ export class AppComponent {
     fotousuario: 'assets/img/marta-grana.jpg',
   };
 
+  fotos: string[] = ["assets/img/IMG_instagram1.jpg", "assets/img/IMG_instagram2.jpg", "assets/img/IMG_instagram3.jpg"];
+
+  mostrarFotos() {
+    console.log(this.fotos.length);
+    //this.fotos.push("una foto distinta")
+
+    for (let index = 0; index < this.fotos.length; index++) {
+      const element = this.fotos[index];
+      console.log(element);
+    }
+
+    this.fotos.forEach(element => {
+      console.log(element);
+    });
+
+    for (const iterator of this.fotos) {
+      console.log(iterator);
+
+    }
+
+    /*console.log(this.fotos.length);
+    console.log(this.fotos[0]);
+    console.log(this.fotos[1]);
+    console.log(this.fotos[2]);
+    console.log(this.fotos[3]);*/
+  }
 
   cargardatos() {
     this.publicaciones = Math.random();
